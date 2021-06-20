@@ -22,7 +22,24 @@ navbarMenu.addEventListener('click', (e) => {
     if(link == null) {
         return
     }
-    console.log(e.target.dataset.link);
-    const scrollV = document.querySelector(link);
-    scrollV.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    scrollIntoView(link)
 })
+
+// contact me! click
+const contact = document.querySelector('.home_contact')
+contact.addEventListener('click', () => {
+    scrollIntoView('#contact')
+})
+
+// make home slowly 투며하게~
+const home = document.querySelector('.home_container')
+const homeHeight = home.getBoundingClientRect().height//home 높이
+document.addEventListener('scroll', () => {
+    home.style.opacity = (1 - window.scrollY/homeHeight)
+})
+
+
+function scrollIntoView(scroll) {
+    const scrollV = document.querySelector(scroll);
+    scrollV.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+}

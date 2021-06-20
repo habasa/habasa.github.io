@@ -178,6 +178,10 @@ p {
     border-radius: var(--size-border-radius);
 }
 
+.home_container {
+    padding-top: 50px;
+}
+
 .section {
     padding: 50px;
     text-align: center;
