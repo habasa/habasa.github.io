@@ -96,12 +96,21 @@ p {
 
 /* navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-blue);
+    background-color: transparent;
     align-items: center;
-    color: var(--color-white);
+    color: var(--color-black);
     padding: 16px;
+    transition: all var(--animation-duratino) ease;
+}
+
+#navbar.navbar-dark {
+    /* transition: all var(--animation-duratino) ease-in-out; */
+    background-color: var(--color-blue);
+    padding: 8px;
 }
 
 .navbar_logo {
@@ -120,9 +129,9 @@ p {
     border-radius: var(--size-border-radius);
 }
 
-/* .navbar_menu_items.active {
+.navbar_menu_items.active {
     border: 1px solid var(--color-white);
-} */
+}
 
 .navbar_menu_items:hover {
     background-color: var(--color-dark-pink);
