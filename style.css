@@ -105,6 +105,7 @@ p {
     color: var(--color-black);
     padding: 16px;
     transition: all var(--animation-duratino) ease;
+    z-index: 1;
 }
 
 #navbar.navbar-dark {
