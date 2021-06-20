@@ -171,29 +171,29 @@
             <h1>My work</h1>
             <h3>Projects</h3>
             <div class="work_category">
-                <button class="category_btn active">all <span class="category_count">5</span></button>
-                <button class="category_btn">front-end <span class="category_count">3</span></button>
-                <button class="category_btn">React <span class="category_count">2</span></button>
+                <button class="category_btn active" data-filter="*">all <span class="category_count">2</span></button>
+                <button class="category_btn" data-filter="front-end">front-end <span class="category_count">1</span></button>
+                <button class="category_btn" data-filter="react">React <span class="category_count">1</span></button>
             </div>
             <div class="work_projects">
-                <a href=# class="project" target="blank">
+                <a href=# class="project" target="blank" data-type="front-end">
                     <img src="images/projects/twittler.png" alt="twittler" class="project_img" />
                     <div class="project_description">
-                        <h3>Twittler</h3>
+                        <h3>Twittler1</h3>
                         <span>Twittler with HTMl, CSS</span>
                     </div>
                 </a>
-                <a href="https://github.com/habasa" class="project" target="blank">
+                <a href="https://github.com/habasa" class="project" target="blank" data-type="front-end">
                     <img src="images/projects/twittler.png" alt="twittler" class="project_img" />
                     <div class="project_description">
-                        <h3>Twittler</h3>
+                        <h3>Twittler2</h3>
                         <span>Twittler with HTMl, CSS</span>
                     </div>
                 </a>
-                <a href="https://github.com/habasa" class="project" target="blank">
+                <a href="https://github.com/habasa" class="project" target="blank" data-type="react">
                     <img src="images/projects/twittler.png" alt="twittler" class="project_img" />
                     <div class="project_description">
-                        <h3>Twittler</h3>
+                        <h3>Twittle3</h3>
                         <span>Twittler with HTMl, CSS</span>
                     </div>
                 </a>
@@ -244,6 +244,9 @@
             <a href="#"><i class="fab fa-github"></i></a>
         </div>
         <p class="contact_rights">2021 habasa - All rights reserved</p>
+    </section>
+    <section class="ArrowBtn">
+        <button id="myBtn">Top</button>
     </section>
 </body>
 
