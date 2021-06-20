@@ -22,7 +22,14 @@ navbarMenu.addEventListener('click', (e) => {
     if(link == null) {
         return
     }
+    navbarMenu.classList.remove('open')
     scrollIntoView(link)
+})
+
+// navbar 뿅 하고 나오게
+const navbarToggleBtn = document.querySelector('.navbar_toggle-btn')
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open')
 })
 
 // contact me! click
@@ -61,6 +68,12 @@ workBtnContainer.addEventListener('click', (e) => {
     if(filter == null) {
         return;
     }
+
+    // my work 버튼부분 클릭하면 지정되게
+    const active = document.querySelector('.category_btn.selected')
+    active.classList.remove('selected')
+    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    target.classList.add('selected')
 
     projectContainer.classList.add('anim-out')    
     setTimeout(() => {
