@@ -94,3 +94,25 @@ function scrollIntoView(scroll) {
     const scrollV = document.querySelector(scroll);
     scrollV.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 }
+
+// 스크롤 내리면 나타나는 이벤트구현
+function isElementUnderBottom (elem, triggerDiff) {
+    const { top } = elem.getBoundingClientRect()
+    const { innerHeight } = window
+    return top > innerHeight + (triggerDiff || 0)
+}
+
+function handleScroll () {
+    const elms = document.querySelectorAll('.up-on-scroll')
+    elms.forEach(elem => {
+        if(isElementUnderBottom(elem, -20)) {
+            elem.style.opacity = '0'
+            elem.style.transform = 'translateY(70px)'
+        } else {
+            elem.style.opacity = '1'
+            elem.style.transform = 'translateY(0px)'
+        }
+    })
+}
+
+window.addEventListener('scroll', handleScroll)
