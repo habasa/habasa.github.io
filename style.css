@@ -403,7 +403,7 @@ p {
     transform: translateY(0);
 }
 
-.project_description h3 {
+.project_description h3, span {
     color: var(--color-white);
 }
 
