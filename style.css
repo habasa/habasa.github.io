@@ -109,8 +109,8 @@ p {
 }
 
 #navbar.navbar-dark {
-    /* transition: all var(--animation-duratino) ease-in-out; */
-    background-color: var(--color-blue);
+    /* transition: all var(--animation-duration) ease-in-out; */
+    background-color: var(--color-orange);
     padding: 8px;
 }
 
@@ -152,7 +152,7 @@ p {
 
 /* Home */
 #home {
-    background: url('images/background.png') center/cover no-repeat;
+    background: url('images/headerBG.png') center/cover no-repeat;
     padding: 40px;
     text-align: center;
 }
@@ -170,12 +170,12 @@ p {
 }
 
 .home_contact {
-    color: var(--color-blue);
+    color: var(--color-black);
     font-size: var(--font-regular);
     font-weight: var(--weight-semi-bold);
     margin: 24px;
     padding: 8px 12px;
-    border: 2px solid var(--color-white);
+    border: 2px solid var(--color-black);
     border-radius: var(--size-border-radius);
 }
 
@@ -464,7 +464,7 @@ p {
 
 /* Contact */
 #contact {
-    background-color: var(--color-blue);
+    background-color: var(--color-orange);
 }
 
 .contact_title,
@@ -492,10 +492,11 @@ p {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    font-size: 50px;
+    font-size: 30px;
     color: var(--color-white);
     background-color: var(--color-dark-pink);
-    border-radius: var(--size-border-radius);
+    /* border-radius: var(--size-border-radius); */
+    border-radius: 95%;
     opacity: 0;
     pointer-events: none;
     /* 불투명도 최대일때 사용자가 버튼클릭 못하게 아예 없애줌 */
@@ -516,7 +517,7 @@ p {
     #navbar {
         flex-direction: column;
         align-items: flex-start;
-        background-color: var(--color-blue);
+        background-color: var(--color-orange);
     }
     #navbar.navbar-dark {
         padding: 16px;
